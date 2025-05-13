@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Js Introduction -->
+    <h1>JavaScript Introduction</h1>
+     <script>
+        // alert("Hello JS")
+        // alert("Hello World")
+        console.log("Javascript is running")
+
+
+        //declaring variables in javascript
+
+        //  let , const and var
+        let firstName = "Denis"
+        const pi = 3.14
+        var age1 = 25
+
+        console.log(`My name is ${firstName} and I am ${age1} years old.`)
+
+        console.log(`The value of pi is ${pi}`)
+
+        //data types in javascript
+
+            // String
+            // Number
+            // Bigint
+            // Boolean
+            // Undefined
+            // Null
+            // Symbol
+            // Object
+
+        // 1. String
+        let name = "John Doe"
+        let color = "Yellow";
+        // console.log("🚀 ~ name:", name)
+        console.log(typeof name) // string
+
+        // 2. Number
+        let age = 30
+        let weight = 7.5;
+        console.log(typeof age) // number
+
+        // 3. Boolean
+        let isStudent = true
+        let isAdmin = false;
+        console.log(typeof isStudent) // boolean
+
+        // 4. Undefined
+        let x
+        console.log(typeof x) // undefined
+
+        // 5. Null
+        let y = null
+        console.log(typeof y) // object (this is a known quirk in JavaScript)     
+
+        
+
+        // 8. Object
+        // Objects are collections of key-value pairs
+        let person = {
+            name: "Alice",
+            age: 25,
+            isStudent: false
+        }
+
+        let car ={
+            make: "Toyota",
+            model: "Camry",
+            year: 2020
+        }
+        console.log(typeof car) // object
+        console.log(typeof person) // object
+
+
+        
+        console.log(person.name) // Alice
+        console.log(person["age"]) // 25
+
+
+        // 9. Array
+        let fruits = ["apple", "banana", "cherry"]
+        const cars = ["Saab", "Volvo", "BMW"];
+        console.log(typeof fruits) // object (arrays are a type of object in JavaScript)
+        console.log(fruits[0]) // apple
+
+
+
+
+        //operators in javascript
+        // 1. Arithmetic Operators
+        let a = 100
+        let b = 5
+
+        let number1 = 100;
+        let number2 = 50;
+
+        let sum = number1 + number2;
+        let difference = number1 - number2;
+        let product = number1 * number2;    
+
+        console.log("Sum: " + sum);
+        console.log("Difference: " + difference);
+        console.log("Product: " + product);
+
+        let myFullName = "Denis" + "Wachira"
+        console.log(myFullName) // Concatenation
+
+
+        console.log(a + b) // Addition
+        console.log(a - b) // Subtraction
+
+        console.log(a * b) // Multiplication
+        console.log(a / b) // Division
+        console.log(a % b) // Modulus (Remainder)
+        console.log(a ** b) // Exponentiation (Power)
+        console.log(a++ ) // Increment  
+        console.log(a-- ) // Decrement
+        console.log(++a ) // Increment (Prefix)     
+        console.log(--a ) // Decrement (Prefix)
+        console.log(a += b) // Addition Assignment
+        console.log(a -= b) // Subtraction Assignment
+        console.log(a *= b) // Multiplication Assignment
+        console.log(a /= b) // Division Assignment
+
+        // 2. Comparison Operators
+        console.log(a == b) // Equal to (Value)
+        console.log(a === b) // Equal to (Value and Type)
+        console.log(a != b) // Not equal to (Value)
+
+        console.log(a !== b) // Not equal to (Value and Type)
+        console.log(a > b) // Greater than
+        console.log(a < b) // Less than
+
+        // 3. Logical Operators
+        console.log(a && b) // Logical AND
+        console.log(a || b) // Logical OR
+
+
+        //conditional statements in javascript
+      
+        // 2. if-else statement
+        // 3  switch statement
+
+        // if (condition) {
+        //     // code to be executed if condition is true
+        // }else{
+        //     // code to be executed if condition is false
+        // }
+
+
+        let num1 = 10;
+
+        if (num1 > 0) {
+            console.log("Positive number")
+        } else if (num1 < 0) {
+            console.log("Negative number")
+        } else {
+            console.log("Zero")
+        }
+
+        //example 2
+        // real world example
+        let myAge = 20
+        if (myAge < 18) {
+            console.log("You are a minor.")
+        } else if (myAge >= 18 && age < 65) {
+            console.log("You are an adult.")
+        } else {
+            console.log("You are a senior citizen.")
+        }
+
+
+        // 2. switch statement
+        // switch (expression) {
+        //     case value1:
+        //         // code to be executed if expression === value1
+        //         break;
+        //     case value2:
+        //         // code to be executed if expression === value2
+        //         break;
+        //     default:
+        //         // code to be executed if expression doesn't match any case
+        // }
+
+
+        let day = 3
+        switch (day) {
+            case 1:
+                console.log("Monday")
+                break
+            case 2:
+                console.log("Tuesday")
+                break
+            case 3:
+                console.log(" Its Wednesday")
+                break
+            default:
+                console.log("Invalid day")
+        }
+
+
+
+
+       // loops in javascript
+       // loops are used to execute a block of code repeatedly until a specified condition is met.
+
+        // 1. for loop
+        // for (initialization; condition; increment/decrement) {
+        //  // code block to be executed
+        // }
+
+
+        for (let i = 0; i < 5; i++) {
+            console.log(`Iteration ${i}`)
+        }
+
+        // 2. while loop
+        let j = 0
+        while (j < 5) {
+            console.log(`While Loop Iteration ${j}`)
+            j++
+        }
+
+        // 3. do while loop
+        let k = 0
+        do {
+            console.log(`Do While Loop Iteration ${k}`)
+            k++
+        } while (k < 5)
+
+
+
+        // A JavaScript function is a block of code designed to perform a particular task.
+
+    //    A JavaScript function is executed when "something" invokes it (calls it).
+
+        //functions in javascript
+
+        //Defining a function
+        function myFunction() {
+            // code to be executed
+            console.log("Hello from myFunction")
+        }
+
+
+        //Calling a function
+        myFunction() // Output: Hello from myFunction
+
+
+        function greet(name) {
+            console.log("Hello, " + name + "!");
+        }
+
+        greet(Denis) // Output: Hello, Denis!
+
+
+         function greetUser(name, age) {
+            console.log("Hello, " + name + "! You are " + age + " years old.");
+        }
+
+        greetUser("Denis", 30); // Output: Hello, Alice! You are 25 years old.
+
+
+
+        // Function with return value
+        function add(a, b) {
+            return a + b;
+        }
+
+        let Addition = add(5, 10);
+        console.log("Sum: " + Addition); // Output: Sum: 15
+
+
+        function sumOfNumbers(num1, num2) {
+            let sum = num1 + num2;
+            return sum;
+        }
+
+        let result = sumOfNumbers(5, 10);
+        console.log("Sum: " + result); // Output: Sum: 15
+        
+
+
+         
+      
+
+
+        // Function with default parameters
+
+        // Default parameters allow named parameters to be initialized with default values if no value or undefined is passed.
+        // Default parameters are a more powerful way to set default values for function parameters.
+
+
+
+        function multiply(a, b = 1) {
+            return a * b;
+        }
+
+        let productResult = multiply(5); // b defaults to 1
+        console.log("Product: " + product); // Output: Product: 5
+
+    
+        //    4. Function Expressions
+// Another way to define a function is using a function expression, where you assign an anonymous function (a function without a name) to a variable.
+
+        const square = function(x) {
+            return x * x;
+        };
+
+        console.log("Square: " + square(5)); // Output: Square: 25
+
+        // 5. Arrow Functions
+
+
+
+
+     
+
+
+
+     </script>
+</body>
+</html>
